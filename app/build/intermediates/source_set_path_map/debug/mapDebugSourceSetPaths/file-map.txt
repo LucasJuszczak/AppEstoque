@@ -43,10 +43,10 @@ com.example.appestoque.app-savedstate-1.2.1-41 C:\Users\Estudante\.gradle\caches
 com.example.appestoque.app-startup-runtime-1.1.1-42 C:\Users\Estudante\.gradle\caches\transforms-4\f83361180159a17d9a83c624c84db293\transformed\startup-runtime-1.1.1\res
 com.example.appestoque.app-annotation-experimental-1.4.1-43 C:\Users\Estudante\.gradle\caches\transforms-4\f915a68779862a8cc49d0f5a0658b4ac\transformed\annotation-experimental-1.4.1\res
 com.example.appestoque.app-navigation-ui-2.6.0-44 C:\Users\Estudante\.gradle\caches\transforms-4\fca8d5083c4ef42434298f99b55ad904\transformed\navigation-ui-2.6.0\res
-com.example.appestoque.app-pngs-45 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\build\generated\res\pngs\debug
-com.example.appestoque.app-resValues-46 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\build\generated\res\resValues\debug
-com.example.appestoque.app-packageDebugResources-47 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.appestoque.app-packageDebugResources-48 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.appestoque.app-debug-49 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.appestoque.app-debug-50 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\src\debug\res
-com.example.appestoque.app-main-51 C:\Users\Estudante\Documents\Lucas\Mobile\AppEstoque\app\src\main\res
+com.example.appestoque.app-pngs-45 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\build\generated\res\pngs\debug
+com.example.appestoque.app-resValues-46 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\build\generated\res\resValues\debug
+com.example.appestoque.app-packageDebugResources-47 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.appestoque.app-packageDebugResources-48 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.appestoque.app-debug-49 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.appestoque.app-debug-50 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\debug\res
+com.example.appestoque.app-main-51 C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\res
