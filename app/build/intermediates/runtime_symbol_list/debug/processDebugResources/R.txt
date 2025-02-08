@@ -3057,6 +3057,9 @@ int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_add_24 0x7f07007a
+int drawable baseline_add_shopping_cart_24 0x7f0700ec
+int drawable baseline_check_24 0x7f0700ed
+int drawable baseline_clear_24 0x7f0700ee
 int drawable btn_checkbox_checked_mtrl 0x7f07007b
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007c
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007d
@@ -3085,9 +3088,6 @@ int drawable ic_launcher_foreground 0x7f070093
 int drawable ic_m3_chip_check 0x7f070094
 int drawable ic_m3_chip_checked_circle 0x7f070095
 int drawable ic_m3_chip_close 0x7f070096
-int drawable ic_menu_camera 0x7f070097
-int drawable ic_menu_gallery 0x7f070098
-int drawable ic_menu_slideshow 0x7f070099
 int drawable ic_mtrl_checked_circle 0x7f07009a
 int drawable ic_mtrl_chip_checked_black 0x7f07009b
 int drawable ic_mtrl_chip_checked_circle 0x7f07009c

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppEstoque</string>
+    <string name="app_name">Aplicativo de Estoque</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Lucas Juszczak</string>
@@ -11,13 +11,13 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="action_settings2">Settings2</string>
-    <string name="todos_os_convidados">Todos os convidados</string>
-    <string name="menu_all_guests">Todos os convidados</string>
-    <string name="menu_present">Presentes</string>
-    <string name="menu_absent">Ausentes</string>
-    <string name="presenca">Você estará presente?</string>
-    <string name="nome">Nome:</string>
-    <string name="presente">Presente</string>
-    <string name="ausente">Ausente</string>
+    <string name="todos_os_convidados">Todos os produtos</string>
+    <string name="menu_all_guests">Todos os produtos</string>
+    <string name="menu_present">Produtos em estoque</string>
+    <string name="menu_absent">Produtos em falta</string>
+    <string name="presenca">O produto está em estoque?</string>
+    <string name="nome">Nome do Produto:</string>
+    <string name="presente">Em estoque</string>
+    <string name="ausente">Em falta</string>
     <string name="enviar">Enviar</string>
 </resources>

@@ -2,11 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="gray">#838383</color>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="purple_200">#000000</color>
+    <color name="purple_500">#3C7FDE</color>
+    <color name="purple_700">#000000</color>
+    <color name="teal_200">#3C7FDE</color>
+    <color name="teal_700">#000000</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -15,24 +15,24 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <string name="action_settings">Settings</string>
     <string name="action_settings2">Settings2</string>
-    <string name="app_name">AppEstoque</string>
-    <string name="ausente">Ausente</string>
+    <string name="app_name">Aplicativo de Estoque</string>
+    <string name="ausente">Em falta</string>
     <string name="enviar">Enviar</string>
-    <string name="menu_absent">Ausentes</string>
-    <string name="menu_all_guests">Todos os convidados</string>
+    <string name="menu_absent">Produtos em falta</string>
+    <string name="menu_all_guests">Todos os produtos</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_home">Home</string>
-    <string name="menu_present">Presentes</string>
+    <string name="menu_present">Produtos em estoque</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_subtitle">contato@email.com</string>
     <string name="nav_header_title">Lucas Juszczak</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="nome">Nome:</string>
-    <string name="presenca">Você estará presente?</string>
-    <string name="presente">Presente</string>
-    <string name="todos_os_convidados">Todos os convidados</string>
+    <string name="nome">Nome do Produto:</string>
+    <string name="presenca">O produto está em estoque?</string>
+    <string name="presente">Em estoque</string>
+    <string name="todos_os_convidados">Todos os produtos</string>
     <style name="Theme.AppEstoque" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

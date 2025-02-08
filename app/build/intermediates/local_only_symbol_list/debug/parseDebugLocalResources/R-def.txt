@@ -14,11 +14,11 @@ dimen fab_margin
 dimen nav_header_height
 dimen nav_header_vertical_spacing
 drawable baseline_add_24
+drawable baseline_add_shopping_cart_24
+drawable baseline_check_24
+drawable baseline_clear_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_menu_camera
-drawable ic_menu_gallery
-drawable ic_menu_slideshow
 drawable side_nav_bar
 id app_bar_main
 id button_enviar
