@@ -20,4 +20,6 @@
     <string name="presente">Em estoque</string>
     <string name="ausente">Em falta</string>
     <string name="enviar">Enviar</string>
+    <string name="valor">Valor (R$):</string>
+    <string name="quantidade">Quantidade:</string>
 </resources>

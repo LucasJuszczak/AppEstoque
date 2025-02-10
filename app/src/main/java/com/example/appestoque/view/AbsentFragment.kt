@@ -46,7 +46,6 @@ class AbsentFragment : Fragment() {
         }
 
         adapter.attachListener(listener)
-        //viewModel.getAll()
         observe()
         return binding.root
     }

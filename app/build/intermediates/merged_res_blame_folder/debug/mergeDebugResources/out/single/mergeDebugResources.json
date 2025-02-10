@@ -100,8 +100,8 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.appestoque.app-debug-49:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.appestoque.app-main-51:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.appestoque.app-debug-49:/layout_activity_guest_form.xml.flat",
+        "source": "com.example.appestoque.app-main-51:/layout/activity_guest_form.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\xml_backup_rules.xml.flat",

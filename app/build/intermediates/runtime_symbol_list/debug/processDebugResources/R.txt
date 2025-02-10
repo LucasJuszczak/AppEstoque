@@ -3351,6 +3351,8 @@ int id edge 0x7f0800b1
 int id edit_query 0x7f0800b2
 int id edit_text_id 0x7f0800b3
 int id edit_text_name 0x7f0800b4
+int id edit_text_quantity 0x7f080215
+int id edit_text_value 0x7f080216
 int id elastic 0x7f0800b5
 int id embed 0x7f0800b6
 int id end 0x7f0800b7
@@ -3550,6 +3552,7 @@ int id progress_circular 0x7f080178
 int id progress_horizontal 0x7f080179
 int id radio 0x7f08017a
 int id radio_absent 0x7f08017b
+int id radio_group 0x7f080217
 int id radio_present 0x7f08017c
 int id ratio 0x7f08017d
 int id rectangles 0x7f08017e
@@ -3653,6 +3656,8 @@ int id text_input_error_icon 0x7f0801df
 int id text_input_start_icon 0x7f0801e0
 int id text_name 0x7f0801e1
 int id text_present 0x7f0801e2
+int id text_quantity 0x7f080218
+int id text_value 0x7f080219
 int id textinput_counter 0x7f0801e3
 int id textinput_error 0x7f0801e4
 int id textinput_helper_text 0x7f0801e5
@@ -4092,6 +4097,7 @@ int string path_password_eye_mask_visible 0x7f1100b1
 int string path_password_strike_through 0x7f1100b2
 int string presenca 0x7f1100b3
 int string presente 0x7f1100b4
+int string quantidade 0x7f1100bd
 int string search_menu_title 0x7f1100b5
 int string searchbar_scrolling_view_behavior 0x7f1100b6
 int string searchview_clear_text_content_description 0x7f1100b7
@@ -4100,6 +4106,7 @@ int string side_sheet_accessibility_pane_title 0x7f1100b9
 int string side_sheet_behavior 0x7f1100ba
 int string status_bar_notification_info_overflow 0x7f1100bb
 int string todos_os_convidados 0x7f1100bc
+int string valor 0x7f1100be
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002

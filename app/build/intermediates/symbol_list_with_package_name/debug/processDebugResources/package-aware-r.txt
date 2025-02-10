@@ -3352,6 +3352,8 @@ id edge
 id edit_query
 id edit_text_id
 id edit_text_name
+id edit_text_quantity
+id edit_text_value
 id elastic
 id embed
 id end
@@ -3551,6 +3553,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id radio_absent
+id radio_group
 id radio_present
 id ratio
 id rectangles
@@ -3654,6 +3657,8 @@ id text_input_error_icon
 id text_input_start_icon
 id text_name
 id text_present
+id text_quantity
+id text_value
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -4093,6 +4098,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string presenca
 string presente
+string quantidade
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4101,6 +4107,7 @@ string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
 string todos_os_convidados
+string valor
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

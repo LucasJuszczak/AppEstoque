@@ -8,9 +8,6 @@ import com.example.appestoque.view.listener.OnGuestListener
 
 class GuestViewHolder(private val bind: RowGuestBinding, private val listener: OnGuestListener) : RecyclerView.ViewHolder(bind.root) {
     fun bind(guest: GuestModel) {
-        //Utilizando a classe R do Java
-//        itemView.findViewById<TextView>(R.id.text_name).text = guest.name
-        //Utilizando viewBinding
         bind.textName.text = guest.name
 
         bind.textName.setOnClickListener{
@@ -19,8 +16,8 @@ class GuestViewHolder(private val bind: RowGuestBinding, private val listener: O
 
         bind.textName.setOnLongClickListener {
             AlertDialog.Builder(itemView.context)
-                .setTitle("Remoção do convidado")
-                .setMessage("Deseja remover?")
+                .setTitle("Remoção do Produto")
+                .setMessage("Deseja remover o produto?")
                 .setPositiveButton("Sim"
                 ) { dialog, which ->
                     listener.onDelete(guest.id)

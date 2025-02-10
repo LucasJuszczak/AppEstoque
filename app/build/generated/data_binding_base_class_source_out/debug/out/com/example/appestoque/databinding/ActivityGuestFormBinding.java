@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,10 +30,19 @@ public final class ActivityGuestFormBinding implements ViewBinding {
   public final EditText editTextName;
 
   @NonNull
+  public final EditText editTextQuantity;
+
+  @NonNull
+  public final EditText editTextValue;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
   public final RadioButton radioAbsent;
+
+  @NonNull
+  public final RadioGroup radioGroup;
 
   @NonNull
   public final RadioButton radioPresent;
@@ -43,18 +53,31 @@ public final class ActivityGuestFormBinding implements ViewBinding {
   @NonNull
   public final TextView textPresent;
 
+  @NonNull
+  public final TextView textQuantity;
+
+  @NonNull
+  public final TextView textValue;
+
   private ActivityGuestFormBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonEnviar,
-      @NonNull EditText editTextName, @NonNull ConstraintLayout main,
-      @NonNull RadioButton radioAbsent, @NonNull RadioButton radioPresent,
-      @NonNull TextView textName, @NonNull TextView textPresent) {
+      @NonNull EditText editTextName, @NonNull EditText editTextQuantity,
+      @NonNull EditText editTextValue, @NonNull ConstraintLayout main,
+      @NonNull RadioButton radioAbsent, @NonNull RadioGroup radioGroup,
+      @NonNull RadioButton radioPresent, @NonNull TextView textName, @NonNull TextView textPresent,
+      @NonNull TextView textQuantity, @NonNull TextView textValue) {
     this.rootView = rootView;
     this.buttonEnviar = buttonEnviar;
     this.editTextName = editTextName;
+    this.editTextQuantity = editTextQuantity;
+    this.editTextValue = editTextValue;
     this.main = main;
     this.radioAbsent = radioAbsent;
+    this.radioGroup = radioGroup;
     this.radioPresent = radioPresent;
     this.textName = textName;
     this.textPresent = textPresent;
+    this.textQuantity = textQuantity;
+    this.textValue = textValue;
   }
 
   @Override
@@ -96,11 +119,29 @@ public final class ActivityGuestFormBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.edit_text_quantity;
+      EditText editTextQuantity = ViewBindings.findChildViewById(rootView, id);
+      if (editTextQuantity == null) {
+        break missingId;
+      }
+
+      id = R.id.edit_text_value;
+      EditText editTextValue = ViewBindings.findChildViewById(rootView, id);
+      if (editTextValue == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.radio_absent;
       RadioButton radioAbsent = ViewBindings.findChildViewById(rootView, id);
       if (radioAbsent == null) {
+        break missingId;
+      }
+
+      id = R.id.radio_group;
+      RadioGroup radioGroup = ViewBindings.findChildViewById(rootView, id);
+      if (radioGroup == null) {
         break missingId;
       }
 
@@ -122,8 +163,21 @@ public final class ActivityGuestFormBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.text_quantity;
+      TextView textQuantity = ViewBindings.findChildViewById(rootView, id);
+      if (textQuantity == null) {
+        break missingId;
+      }
+
+      id = R.id.text_value;
+      TextView textValue = ViewBindings.findChildViewById(rootView, id);
+      if (textValue == null) {
+        break missingId;
+      }
+
       return new ActivityGuestFormBinding((ConstraintLayout) rootView, buttonEnviar, editTextName,
-          main, radioAbsent, radioPresent, textName, textPresent);
+          editTextQuantity, editTextValue, main, radioAbsent, radioGroup, radioPresent, textName,
+          textPresent, textQuantity, textValue);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
