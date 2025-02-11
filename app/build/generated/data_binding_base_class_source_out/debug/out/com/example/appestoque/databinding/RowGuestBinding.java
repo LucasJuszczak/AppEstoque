@@ -22,18 +22,9 @@ public final class RowGuestBinding implements ViewBinding {
   @NonNull
   public final TextView textName;
 
-  @NonNull
-  public final TextView textQuantity;
-
-  @NonNull
-  public final TextView textValue;
-
-  private RowGuestBinding(@NonNull LinearLayout rootView, @NonNull TextView textName,
-      @NonNull TextView textQuantity, @NonNull TextView textValue) {
+  private RowGuestBinding(@NonNull LinearLayout rootView, @NonNull TextView textName) {
     this.rootView = rootView;
     this.textName = textName;
-    this.textQuantity = textQuantity;
-    this.textValue = textValue;
   }
 
   @Override
@@ -69,19 +60,7 @@ public final class RowGuestBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.text_quantity;
-      TextView textQuantity = ViewBindings.findChildViewById(rootView, id);
-      if (textQuantity == null) {
-        break missingId;
-      }
-
-      id = R.id.text_value;
-      TextView textValue = ViewBindings.findChildViewById(rootView, id);
-      if (textValue == null) {
-        break missingId;
-      }
-
-      return new RowGuestBinding((LinearLayout) rootView, textName, textQuantity, textValue);
+      return new RowGuestBinding((LinearLayout) rootView, textName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

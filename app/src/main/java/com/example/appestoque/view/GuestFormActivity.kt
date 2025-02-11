@@ -47,8 +47,10 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
         if(view.id == R.id.button_enviar){
             val name = binding.editTextName.text.toString()
             val presence = binding.radioPresent.isChecked
+            val quantity = binding.editTextQuantity.text.toString()
+            val value = binding.editTextValue.text.toString()
 
-            val model = GuestModel(guestId, name, presence)
+            val model = GuestModel(guestId, name, presence, quantity, value)
             viewModel.save(model)
             finish()
         }
@@ -57,6 +59,8 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
     private fun observe(){
         viewModel.guest.observe(this, Observer {
             binding.editTextName.setText(it.name)
+            binding.editTextQuantity.setText(it.quantity)
+            binding.editTextValue.setText(it.value)
             if(it.presence){
                 binding.radioPresent.isChecked = true
             }else{
