@@ -10,29 +10,29 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appestoque.constants.DataBaseConstants
 import com.example.appestoque.databinding.FragmentAbsentBinding
-import com.example.appestoque.view.adapter.GuestsAdapter
-import com.example.appestoque.view.listener.OnGuestListener
-import com.example.appestoque.viewmodel.GuestsViewModel
+import com.example.appestoque.view.adapter.ProductsAdapter
+import com.example.appestoque.view.listener.OnProductListener
+import com.example.appestoque.viewmodel.ProductsViewModel
 
 class AbsentFragment : Fragment() {
 
     private var _binding: FragmentAbsentBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var viewModel: GuestsViewModel
-    private val adapter = GuestsAdapter()
+    private lateinit var viewModel: ProductsViewModel
+    private val adapter = ProductsAdapter()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        viewModel = ViewModelProvider(this).get(GuestsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
         _binding = FragmentAbsentBinding.inflate(inflater, container, false)
 
         binding.recyclerGuests.layoutManager = LinearLayoutManager(context)
 
         binding.recyclerGuests.adapter = adapter
 
-        val listener = object : OnGuestListener {
+        val listener = object : OnProductListener {
             override fun onClick(id: Int) {
-                val intent = Intent(context, GuestFormActivity::class.java)
+                val intent = Intent(context, ProductFormActivity::class.java)
                 val bundle = Bundle()
                 bundle.putInt(DataBaseConstants.GUEST.ID, id)
                 intent.putExtras(bundle)

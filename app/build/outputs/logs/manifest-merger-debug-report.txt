@@ -116,12 +116,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Es
 		ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:13:9-48
 	android:dataExtractionRules
 		ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.appestoque.view.GuestFormActivity
+activity#com.example.appestoque.view.ProductFormActivity
 ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:16:13-51
+		ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:16:13-53
 activity#com.example.appestoque.view.MainActivity
 ADDED from C:\Users\Estudante\Documents\Lucas\AppEstoque\app\src\main\AndroidManifest.xml:18:9-28:20
 	android:label

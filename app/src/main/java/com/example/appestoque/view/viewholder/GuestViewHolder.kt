@@ -3,11 +3,11 @@ package com.example.appestoque.view.viewholder
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appestoque.databinding.RowGuestBinding
-import com.example.appestoque.model.GuestModel
-import com.example.appestoque.view.listener.OnGuestListener
+import com.example.appestoque.model.ProductModel
+import com.example.appestoque.view.listener.OnProductListener
 
-class GuestViewHolder(private val bind: RowGuestBinding, private val listener: OnGuestListener) : RecyclerView.ViewHolder(bind.root) {
-    fun bind(guest: GuestModel) {
+class GuestViewHolder(private val bind: RowGuestBinding, private val listener: OnProductListener) : RecyclerView.ViewHolder(bind.root) {
+    fun bind(guest: ProductModel) {
         bind.textName.text = guest.name
 
         bind.textName.setOnClickListener{

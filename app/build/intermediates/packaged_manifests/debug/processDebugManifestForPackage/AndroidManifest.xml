@@ -28,7 +28,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppEstoque" >
         <activity
-            android:name="com.example.appestoque.view.GuestFormActivity"
+            android:name="com.example.appestoque.view.ProductFormActivity"
             android:exported="false" />
         <activity
             android:name="com.example.appestoque.view.MainActivity"
