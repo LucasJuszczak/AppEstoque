@@ -20,7 +20,7 @@ class ProductDataBase(context: Context) : SQLiteOpenHelper(context, NAME, null, 
                 DataBaseConstants.GUEST.COLUMNS.NAME + " text, " +
                 DataBaseConstants.GUEST.COLUMNS.PRESENCE + " integer, " +
                 DataBaseConstants.GUEST.COLUMNS.QUANTITY + " text, " +
-                DataBaseConstants.GUEST.COLUMNS.VALUE + " text;"
+                DataBaseConstants.GUEST.COLUMNS.VALUE + " text" + ");"
         )
     }
 
