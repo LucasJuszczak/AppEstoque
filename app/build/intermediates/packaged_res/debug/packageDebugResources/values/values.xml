@@ -30,11 +30,14 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="nome">Nome do Produto:</string>
+    <string name="nomeProduto">Nome do Produto</string>
     <string name="presenca">O produto está em estoque?</string>
     <string name="presente">Em estoque</string>
+    <string name="qntdProduto">Qntd</string>
     <string name="quantidade">Quantidade:</string>
     <string name="todos_os_convidados">Todos os produtos</string>
     <string name="valor">Valor (R$):</string>
+    <string name="valorProduto">Valor (R$)</string>
     <style name="Theme.AppEstoque" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

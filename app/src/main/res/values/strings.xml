@@ -22,4 +22,7 @@
     <string name="enviar">Enviar</string>
     <string name="valor">Valor (R$):</string>
     <string name="quantidade">Quantidade:</string>
+    <string name="nomeProduto">Nome do Produto</string>
+    <string name="qntdProduto">Qntd</string>
+    <string name="valorProduto">Valor (R$)</string>
 </resources>

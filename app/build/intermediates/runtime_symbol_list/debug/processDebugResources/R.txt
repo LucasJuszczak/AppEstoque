@@ -4090,6 +4090,7 @@ int string nav_header_title 0x7f1100aa
 int string navigation_drawer_close 0x7f1100ab
 int string navigation_drawer_open 0x7f1100ac
 int string nome 0x7f1100ad
+int string nomeProduto 0x7f1100bf
 int string password_toggle_content_description 0x7f1100ae
 int string path_password_eye 0x7f1100af
 int string path_password_eye_mask_strike_through 0x7f1100b0
@@ -4097,6 +4098,7 @@ int string path_password_eye_mask_visible 0x7f1100b1
 int string path_password_strike_through 0x7f1100b2
 int string presenca 0x7f1100b3
 int string presente 0x7f1100b4
+int string qntdProduto 0x7f1100c0
 int string quantidade 0x7f1100bd
 int string search_menu_title 0x7f1100b5
 int string searchbar_scrolling_view_behavior 0x7f1100b6
@@ -4107,6 +4109,7 @@ int string side_sheet_behavior 0x7f1100ba
 int string status_bar_notification_info_overflow 0x7f1100bb
 int string todos_os_convidados 0x7f1100bc
 int string valor 0x7f1100be
+int string valorProduto 0x7f1100c1
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002

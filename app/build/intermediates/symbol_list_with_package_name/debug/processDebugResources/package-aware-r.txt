@@ -4091,6 +4091,7 @@ string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
 string nome
+string nomeProduto
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -4098,6 +4099,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string presenca
 string presente
+string qntdProduto
 string quantidade
 string search_menu_title
 string searchbar_scrolling_view_behavior
@@ -4108,6 +4110,7 @@ string side_sheet_behavior
 string status_bar_notification_info_overflow
 string todos_os_convidados
 string valor
+string valorProduto
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

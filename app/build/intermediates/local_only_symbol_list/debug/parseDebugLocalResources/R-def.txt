@@ -75,11 +75,14 @@ string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
 string nome
+string nomeProduto
 string presenca
 string presente
+string qntdProduto
 string quantidade
 string todos_os_convidados
 string valor
+string valorProduto
 style Theme.AppEstoque
 style Theme.AppEstoque.AppBarOverlay
 style Theme.AppEstoque.NoActionBar
