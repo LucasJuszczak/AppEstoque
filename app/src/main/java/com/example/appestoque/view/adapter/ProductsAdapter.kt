@@ -27,7 +27,7 @@ class ProductsAdapter: RecyclerView.Adapter<GuestViewHolder>() {
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun updateProducts(list: List<ProductModel>){
+    fun updatedProducts(list: List<ProductModel>){
         productList = list
         //Atualizar
         notifyDataSetChanged()

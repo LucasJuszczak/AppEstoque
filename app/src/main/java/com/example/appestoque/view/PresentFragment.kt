@@ -67,7 +67,7 @@ class PresentFragment : Fragment() {
 
     private fun observe() {
         viewModel.products.observe(viewLifecycleOwner) {
-            adapter.updateProducts(it)
+            adapter.updatedProducts(it)
         }
     }
 }
