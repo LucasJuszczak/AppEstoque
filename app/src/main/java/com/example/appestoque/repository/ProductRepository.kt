@@ -21,19 +21,19 @@ class ProductRepository private constructor(context: Context) {
         }
     }
 
-    fun insert(guest: ProductModel): Boolean {
+    fun insert(product: ProductModel): Boolean {
         return try{
             val db = productDataBase.writableDatabase
 
-            val presence = if (guest.presence) 1 else 0
+            val presence = if (product.presence) 1 else 0
 
             val values = ContentValues()
-            values.put(DataBaseConstants.GUEST.COLUMNS.PRESENCE, presence)
-            values.put(DataBaseConstants.GUEST.COLUMNS.NAME, guest.name)
-            values.put(DataBaseConstants.GUEST.COLUMNS.QUANTITY, guest.quantity)
-            values.put(DataBaseConstants.GUEST.COLUMNS.VALUE, guest.value)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE, presence)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.NAME, product.name)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.QUANTITY, product.quantity)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.VALUE, product.value)
 
-            db.insert(DataBaseConstants.GUEST.TABLE_NAME, null, values)
+            db.insert(DataBaseConstants.PRODUCT.TABLE_NAME, null, values)
             true
 
         } catch (e: Exception) {
@@ -41,22 +41,22 @@ class ProductRepository private constructor(context: Context) {
         }
     }
 
-    fun update(guest: ProductModel): Boolean{
+    fun update(product: ProductModel): Boolean{
         return try{
             val db = productDataBase.writableDatabase
 
-            val presence = if (guest.presence) 1 else 0
+            val presence = if (product.presence) 1 else 0
 
             val values = ContentValues()
-            values.put(DataBaseConstants.GUEST.COLUMNS.PRESENCE, presence)
-            values.put(DataBaseConstants.GUEST.COLUMNS.NAME, guest.name)
-            values.put(DataBaseConstants.GUEST.COLUMNS.QUANTITY, guest.quantity)
-            values.put(DataBaseConstants.GUEST.COLUMNS.VALUE, guest.value)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE, presence)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.NAME, product.name)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.QUANTITY, product.quantity)
+            values.put(DataBaseConstants.PRODUCT.COLUMNS.VALUE, product.value)
 
-            val selection = DataBaseConstants.GUEST.COLUMNS.ID + " = ?"
-            val args = arrayOf(guest.id.toString())
+            val selection = DataBaseConstants.PRODUCT.COLUMNS.ID + " = ?"
+            val args = arrayOf(product.id.toString())
 
-            db.update(DataBaseConstants.GUEST.TABLE_NAME, values, selection, args)
+            db.update(DataBaseConstants.PRODUCT.TABLE_NAME, values, selection, args)
             true
 
         } catch (e: Exception) {
@@ -68,10 +68,10 @@ class ProductRepository private constructor(context: Context) {
         return try{
             val db = productDataBase.writableDatabase
 
-            val selection = DataBaseConstants.GUEST.COLUMNS.ID + " = ?"
+            val selection = DataBaseConstants.PRODUCT.COLUMNS.ID + " = ?"
             val args = arrayOf(id.toString())
 
-            db.delete(DataBaseConstants.GUEST.TABLE_NAME, selection, args)
+            db.delete(DataBaseConstants.PRODUCT.TABLE_NAME, selection, args)
             true
 
         } catch (e: Exception) {
@@ -82,38 +82,38 @@ class ProductRepository private constructor(context: Context) {
     @SuppressLint("Recycle", "Range")
     fun get(id: Int): ProductModel? {
 
-        var guest: ProductModel? = null
+        var product: ProductModel? = null
         try {
             val db = productDataBase.readableDatabase
 
             val projection = arrayOf(
-                DataBaseConstants.GUEST.COLUMNS.ID,
-                DataBaseConstants.GUEST.COLUMNS.NAME,
-                DataBaseConstants.GUEST.COLUMNS.PRESENCE,
-                DataBaseConstants.GUEST.COLUMNS.QUANTITY,
-                DataBaseConstants.GUEST.COLUMNS.VALUE
+                DataBaseConstants.PRODUCT.COLUMNS.ID,
+                DataBaseConstants.PRODUCT.COLUMNS.NAME,
+                DataBaseConstants.PRODUCT.COLUMNS.PRESENCE,
+                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY,
+                DataBaseConstants.PRODUCT.COLUMNS.VALUE
             )
 
-            val selection = DataBaseConstants.GUEST.COLUMNS.ID + " = ?"
+            val selection = DataBaseConstants.PRODUCT.COLUMNS.ID + " = ?"
             val args = arrayOf(id.toString())
 
-            val cursor = db.query(DataBaseConstants.GUEST.TABLE_NAME, projection, selection, args, null, null, null)
+            val cursor = db.query(DataBaseConstants.PRODUCT.TABLE_NAME, projection, selection, args, null, null, null)
 
             if (cursor != null && cursor.count > 0) {
                 while (cursor.moveToNext()) {
-                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.NAME))
-                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.PRESENCE))
-                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.QUANTITY))
-                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.VALUE))
+                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
+                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE))
+                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.QUANTITY))
+                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.VALUE))
 
-                    guest = ProductModel(id, name, presence == 1, quantity, value)
+                    product = ProductModel(id, name, presence == 1, quantity, value)
                 }
             }
             cursor.close()
         } catch (e: Exception) {
-            return guest
+            return product
         }
-        return guest
+        return product
     }
 
     @SuppressLint("Recycle", "Range")
@@ -125,28 +125,28 @@ class ProductRepository private constructor(context: Context) {
             val db = productDataBase.readableDatabase
 
             val projection = arrayOf(
-                DataBaseConstants.GUEST.COLUMNS.ID,
-                DataBaseConstants.GUEST.COLUMNS.NAME,
-                DataBaseConstants.GUEST.COLUMNS.PRESENCE,
-                DataBaseConstants.GUEST.COLUMNS.QUANTITY,
-                DataBaseConstants.GUEST.COLUMNS.VALUE
+                DataBaseConstants.PRODUCT.COLUMNS.ID,
+                DataBaseConstants.PRODUCT.COLUMNS.NAME,
+                DataBaseConstants.PRODUCT.COLUMNS.PRESENCE,
+                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY,
+                DataBaseConstants.PRODUCT.COLUMNS.VALUE
             )
 
             val cursor = db.query(
-                DataBaseConstants.GUEST.TABLE_NAME, projection, null, null, null, null, null
+                DataBaseConstants.PRODUCT.TABLE_NAME, projection, null, null, null, null, null
             )
 
             if (cursor != null && cursor.count > 0) {
                 while (cursor.moveToNext()) {
-                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.ID))
-                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.NAME))
-                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.PRESENCE))
-                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.QUANTITY))
-                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.VALUE))
+                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.ID))
+                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
+                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE))
+                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.QUANTITY))
+                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.VALUE))
 
                     //construindo o modelo
-                    val guest = ProductModel(id, name, presence == 1, quantity, value)
-                    list.add(guest)
+                    val product = ProductModel(id, name, presence == 1, quantity, value)
+                    list.add(product)
                 }
             }
             cursor.close()
@@ -165,11 +165,11 @@ class ProductRepository private constructor(context: Context) {
             val db = productDataBase.readableDatabase
 
             val projection = arrayOf(
-                DataBaseConstants.GUEST.COLUMNS.ID,
-                DataBaseConstants.GUEST.COLUMNS.NAME,
-                DataBaseConstants.GUEST.COLUMNS.PRESENCE,
-                DataBaseConstants.GUEST.COLUMNS.QUANTITY,
-                DataBaseConstants.GUEST.COLUMNS.VALUE
+                DataBaseConstants.PRODUCT.COLUMNS.ID,
+                DataBaseConstants.PRODUCT.COLUMNS.NAME,
+                DataBaseConstants.PRODUCT.COLUMNS.PRESENCE,
+                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY,
+                DataBaseConstants.PRODUCT.COLUMNS.VALUE
             )
 
             //Recuperando com SQL
@@ -178,15 +178,15 @@ class ProductRepository private constructor(context: Context) {
 
             if (cursor != null && cursor.count > 0) {
                 while (cursor.moveToNext()) {
-                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.ID))
-                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.NAME))
-                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.PRESENCE))
-                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.QUANTITY))
-                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.VALUE))
+                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.ID))
+                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
+                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE))
+                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.QUANTITY))
+                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.VALUE))
 
                     //Construindo o modelo
-                    val guest = ProductModel(id, name, presence == 1, quantity, value)
-                    list.add(guest)
+                    val product = ProductModel(id, name, presence == 1, quantity, value)
+                    list.add(product)
                 }
             }
             cursor.close()
@@ -205,26 +205,26 @@ class ProductRepository private constructor(context: Context) {
             val db = productDataBase.readableDatabase
 
             val projection = arrayOf(
-                DataBaseConstants.GUEST.COLUMNS.ID,
-                DataBaseConstants.GUEST.COLUMNS.NAME,
-                DataBaseConstants.GUEST.COLUMNS.PRESENCE,
-                DataBaseConstants.GUEST.COLUMNS.QUANTITY,
-                DataBaseConstants.GUEST.COLUMNS.VALUE
+                DataBaseConstants.PRODUCT.COLUMNS.ID,
+                DataBaseConstants.PRODUCT.COLUMNS.NAME,
+                DataBaseConstants.PRODUCT.COLUMNS.PRESENCE,
+                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY,
+                DataBaseConstants.PRODUCT.COLUMNS.VALUE
             )
 
             val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence == 0", null)
 
             if (cursor != null && cursor.count > 0) {
                 while (cursor.moveToNext()) {
-                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.ID))
-                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.NAME))
-                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.PRESENCE))
-                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.QUANTITY))
-                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.GUEST.COLUMNS.VALUE))
+                    val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.ID))
+                    val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
+                    val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE))
+                    val quantity = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.QUANTITY))
+                    val value = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.VALUE))
 
                     //Construindo o modelo
-                    val guest = ProductModel(id, name, presence == 1, quantity, value)
-                    list.add(guest)
+                    val product = ProductModel(id, name, presence == 1, quantity, value)
+                    list.add(product)
                 }
             }
             cursor.close()

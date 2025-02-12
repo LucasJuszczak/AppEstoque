@@ -8,19 +8,19 @@ import com.example.appestoque.constants.DataBaseConstants
 class ProductDataBase(context: Context) : SQLiteOpenHelper(context, NAME, null, VERSION){
 
     companion object{
-        private const val NAME = "guestdb"
+        private const val NAME = "estoquedb"
         private const val VERSION = 1
     }
 
     override fun onCreate(db: SQLiteDatabase) {
 
         db.execSQL(
-            "CREATE TABLE " + DataBaseConstants.GUEST.TABLE_NAME + " (" +
-                DataBaseConstants.GUEST.COLUMNS.ID + " integer primary key autoincrement, " +
-                DataBaseConstants.GUEST.COLUMNS.NAME + " text, " +
-                DataBaseConstants.GUEST.COLUMNS.PRESENCE + " integer, " +
-                DataBaseConstants.GUEST.COLUMNS.QUANTITY + " text, " +
-                DataBaseConstants.GUEST.COLUMNS.VALUE + " text" + ");"
+            "CREATE TABLE " + DataBaseConstants.PRODUCT.TABLE_NAME + " (" +
+                DataBaseConstants.PRODUCT.COLUMNS.ID + " integer primary key autoincrement, " +
+                DataBaseConstants.PRODUCT.COLUMNS.NAME + " text, " +
+                DataBaseConstants.PRODUCT.COLUMNS.PRESENCE + " integer, " +
+                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY + " integer, " +
+                DataBaseConstants.PRODUCT.COLUMNS.VALUE + " integer); "
         )
     }
 

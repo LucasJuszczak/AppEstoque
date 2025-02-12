@@ -20,7 +20,7 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding : ActivityGuestFormBinding
     private lateinit var viewModel : ProductFormViewModel
 
-    private var guestId = 0
+    private var productId = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +50,7 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
             val quantity = binding.editTextQuantity.text.toString()
             val value = binding.editTextValue.text.toString()
 
-            val model = ProductModel(guestId, name, presence, quantity, value)
+            val model = ProductModel(productId, name, presence, quantity, value)
             viewModel.save(model)
             finish()
         }
@@ -59,16 +59,16 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
     private fun observe(){
         viewModel.guest.observe(this, Observer {
             binding.editTextName.setText(it.name)
-            binding.editTextQuantity.setText(it.quantity)
-            binding.editTextValue.setText(it.value)
             if(it.presence){
                 binding.radioPresent.isChecked = true
             }else{
                 binding.radioAbsent.isChecked = true
             }
+            binding.editTextQuantity.setText(it.quantity)
+            binding.editTextValue.setText(it.value)
         })
 
-        viewModel.saveGuest.observe(this, Observer {
+        viewModel.saveProduct.observe(this, Observer {
             if(it.success){
                 Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
                 finish()
@@ -79,8 +79,8 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
     private fun loadData() {
         val bundle = intent.extras
         if(bundle != null){
-            guestId = bundle.getInt(DataBaseConstants.GUEST.ID)
-            viewModel.get(guestId)
+            productId = bundle.getInt(DataBaseConstants.PRODUCT.ID)
+            viewModel.get(productId)
         }
     }
 }

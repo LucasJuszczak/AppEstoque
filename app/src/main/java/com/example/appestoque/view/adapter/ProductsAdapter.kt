@@ -10,7 +10,7 @@ import com.example.appestoque.view.listener.OnProductListener
 import com.example.appestoque.view.viewholder.GuestViewHolder
 
 class ProductsAdapter: RecyclerView.Adapter<GuestViewHolder>() {
-    private var guestList: List<ProductModel> = listOf()
+    private var productList: List<ProductModel> = listOf()
     private lateinit var listener : OnProductListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuestViewHolder {
@@ -19,16 +19,16 @@ class ProductsAdapter: RecyclerView.Adapter<GuestViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: GuestViewHolder, position: Int) {
-        holder.bind(guestList[position])
+        holder.bind(productList[position])
     }
 
     override fun getItemCount(): Int {
-        return guestList.count()
+        return productList.count()
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun updateGuests(list: List<ProductModel>){
-        guestList = list
+    fun updateProducts(list: List<ProductModel>){
+        productList = list
         //Atualizar
         notifyDataSetChanged()
     }

@@ -15,19 +15,19 @@ class ProductFormViewModel(application: Application) : AndroidViewModel(applicat
     private val productModel = MutableLiveData<ProductModel>()
     val guest: LiveData<ProductModel> = productModel
 
-    private val _saveGuest = MutableLiveData<SuccessFailure>()
-    val saveGuest: LiveData<SuccessFailure> = _saveGuest
+    private val _saveProduct = MutableLiveData<SuccessFailure>()
+    val saveProduct: LiveData<SuccessFailure> = _saveProduct
 
     fun get(id: Int){
         productModel.value = repository.get(id)
     }
 
-    fun save(guest: ProductModel) {
+    fun save(product: ProductModel) {
         val successFailure = SuccessFailure(true, "")
-        if (guest.id == 0) {
-            successFailure.success = repository.insert(guest)
+        if (product.id == 0) {
+            successFailure.success = repository.insert(product)
         }else{
-            successFailure.success = repository.update(guest)
+            successFailure.success = repository.update(product)
         }
     }
 

@@ -9,22 +9,21 @@ import com.example.appestoque.repository.ProductRepository
 
 class ProductsViewModel(application: Application) : AndroidViewModel(application) {
 
-    //private lateinit var repository: GuestRepository
     private val repository = ProductRepository.getInstance(application.applicationContext)
 
-    private val listAllGuests = MutableLiveData<List<ProductModel>>()
-    val guests: LiveData<List<ProductModel>> = listAllGuests
+    private val listAllProducts = MutableLiveData<List<ProductModel>>()
+    val products: LiveData<List<ProductModel>> = listAllProducts
 
     fun getAll() {
-        listAllGuests.value = repository.getAll()
+        listAllProducts.value = repository.getAll()
     }
 
     fun getPresent() {
-        listAllGuests.value = repository.getPresence()
+        listAllProducts.value = repository.getPresence()
     }
 
     fun getAbsent() {
-        listAllGuests.value = repository.getAbsent()
+        listAllProducts.value = repository.getAbsent()
     }
 
     fun delete(id: Int) {

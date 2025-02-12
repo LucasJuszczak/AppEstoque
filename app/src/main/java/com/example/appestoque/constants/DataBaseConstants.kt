@@ -2,9 +2,9 @@ package com.example.appestoque.constants
 
 class DataBaseConstants {
 
-    object GUEST{
-        const val ID = "guestid"
-        const val TABLE_NAME = "Guest"
+    object PRODUCT{
+        const val ID = "productid"
+        const val TABLE_NAME = "product"
 
         object COLUMNS {
             const val ID = "id"

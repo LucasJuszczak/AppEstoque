@@ -38,7 +38,7 @@ class PresentFragment : Fragment() {
             override fun onClick(id: Int) {
                 val intent = Intent(context, ProductFormActivity::class.java)
                 val bundle = Bundle()
-                bundle.putInt(DataBaseConstants.GUEST.ID, id)
+                bundle.putInt(DataBaseConstants.PRODUCT.ID, id)
                 intent.putExtras(bundle)
                 startActivity(intent)
             }
@@ -66,8 +66,8 @@ class PresentFragment : Fragment() {
     }
 
     private fun observe() {
-        viewModel.guests.observe(viewLifecycleOwner) {
-            adapter.updateGuests(it)
+        viewModel.products.observe(viewLifecycleOwner) {
+            adapter.updateProducts(it)
         }
     }
 }
