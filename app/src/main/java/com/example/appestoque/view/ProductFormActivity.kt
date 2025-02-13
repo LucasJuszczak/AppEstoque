@@ -11,13 +11,13 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.appestoque.R
 import com.example.appestoque.constants.DataBaseConstants
-import com.example.appestoque.databinding.ActivityGuestFormBinding
+import com.example.appestoque.databinding.ActivityProductFormBinding
 import com.example.appestoque.model.ProductModel
 import com.example.appestoque.viewmodel.ProductFormViewModel
 
 class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var binding : ActivityGuestFormBinding
+    private lateinit var binding : ActivityProductFormBinding
     private lateinit var viewModel : ProductFormViewModel
 
     private var productId = 0
@@ -25,7 +25,7 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityGuestFormBinding.inflate(layoutInflater)
+        binding = ActivityProductFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -57,15 +57,15 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun observe(){
-        viewModel.guest.observe(this, Observer {
+        viewModel.product.observe(this, Observer {
             binding.editTextName.setText(it.name)
+            binding.editTextQuantity.setText(it.quantity)
+            binding.editTextValue.setText(it.value)
             if(it.presence){
                 binding.radioPresent.isChecked = true
             }else{
                 binding.radioAbsent.isChecked = true
             }
-            binding.editTextQuantity.setText(it.quantity)
-            binding.editTextValue.setText(it.value)
         })
 
         viewModel.saveProduct.observe(this, Observer {

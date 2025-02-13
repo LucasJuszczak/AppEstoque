@@ -99,7 +99,7 @@ class ProductRepository private constructor(context: Context) {
 
             val cursor = db.query(DataBaseConstants.PRODUCT.TABLE_NAME, projection, selection, args, null, null, null)
 
-            if (cursor != null && cursor.count > 0) {
+            if (cursor.count > 0) {
                 while (cursor.moveToNext()) {
                     val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
                     val presence = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.PRESENCE))
@@ -136,7 +136,7 @@ class ProductRepository private constructor(context: Context) {
                 DataBaseConstants.PRODUCT.TABLE_NAME, projection, null, null, null, null, null
             )
 
-            if (cursor != null && cursor.count > 0) {
+            if (cursor.count > 0) {
                 while (cursor.moveToNext()) {
                     val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.ID))
                     val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
@@ -174,9 +174,9 @@ class ProductRepository private constructor(context: Context) {
 
             //Recuperando com SQL
             val cursor =
-                db.rawQuery("SELECT id, name, presence, quantity, value FROM guest WHERE presence = 1", null)
+                db.rawQuery("SELECT id, name, presence, quantity, value FROM product WHERE presence == 1", null)
 
-            if (cursor != null && cursor.count > 0) {
+            if (cursor.count > 0) {
                 while (cursor.moveToNext()) {
                     val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.ID))
                     val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))
@@ -212,9 +212,9 @@ class ProductRepository private constructor(context: Context) {
                 DataBaseConstants.PRODUCT.COLUMNS.VALUE
             )
 
-            val cursor = db.rawQuery("SELECT id, name, presence FROM Guest WHERE presence == 0", null)
+            val cursor = db.rawQuery("SELECT id, name, presence, quantity, value FROM product WHERE presence == 0", null)
 
-            if (cursor != null && cursor.count > 0) {
+            if (cursor.count > 0) {
                 while (cursor.moveToNext()) {
                     val id = cursor.getInt(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.ID))
                     val name = cursor.getString(cursor.getColumnIndex(DataBaseConstants.PRODUCT.COLUMNS.NAME))

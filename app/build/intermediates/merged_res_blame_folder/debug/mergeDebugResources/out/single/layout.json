@@ -1,27 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\fragment_absent.xml",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_absent.xml"
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\item_product.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\item_product.xml"
     },
     {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\activity_guest_form.xml",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\activity_guest_form.xml"
-    },
-    {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\nav_header_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\row_guest.xml",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\row_guest.xml"
-    },
-    {
-        "merged": "com.example.appestoque.app-mergeDebugResources-48:/layout/fragment_all_guests.xml",
-        "source": "com.example.appestoque.app-main-51:/layout/fragment_all_guests.xml"
-    },
-    {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\fragment_all_guests.xml",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_all_guests.xml"
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\row_product.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\row_product.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\content_main.xml",
@@ -36,8 +20,32 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_present.xml"
     },
     {
-        "merged": "com.example.appestoque.app-mergeDebugResources-48:/layout/activity_guest_form.xml",
-        "source": "com.example.appestoque.app-main-51:/layout/activity_guest_form.xml"
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\fragment_all_products.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_all_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\fragment_absent.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_absent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\activity_product_form.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\activity_product_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\row_guest.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\row_guest.xml"
+    },
+    {
+        "merged": "com.example.appestoque.app-mergeDebugResources-48:/layout/row_guest.xml",
+        "source": "com.example.appestoque.app-main-51:/layout/row_guest.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\header_product_list.xml",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\header_product_list.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-mergeDebugResources-48:\\layout\\app_bar_main.xml",

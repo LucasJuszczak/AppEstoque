@@ -19,8 +19,8 @@ class ProductDataBase(context: Context) : SQLiteOpenHelper(context, NAME, null, 
                 DataBaseConstants.PRODUCT.COLUMNS.ID + " integer primary key autoincrement, " +
                 DataBaseConstants.PRODUCT.COLUMNS.NAME + " text, " +
                 DataBaseConstants.PRODUCT.COLUMNS.PRESENCE + " integer, " +
-                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY + " integer, " +
-                DataBaseConstants.PRODUCT.COLUMNS.VALUE + " integer); "
+                DataBaseConstants.PRODUCT.COLUMNS.QUANTITY + " text, " +
+                DataBaseConstants.PRODUCT.COLUMNS.VALUE + " text); "
         )
     }
 

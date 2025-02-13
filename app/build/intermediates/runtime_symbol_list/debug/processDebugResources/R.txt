@@ -1482,6 +1482,7 @@ int color foreground_material_light 0x7f05005d
 int color gray 0x7f05005e
 int color highlighted_text_material_dark 0x7f05005f
 int color highlighted_text_material_light 0x7f050060
+int color light_gray 0x7f05030d
 int color m3_appbar_overlay_color 0x7f050061
 int color m3_assist_chip_icon_tint_color 0x7f050062
 int color m3_assist_chip_stroke_color 0x7f050063
@@ -3389,6 +3390,7 @@ int id graph_wrap 0x7f0800d5
 int id group_divider 0x7f0800d6
 int id grouping 0x7f0800d7
 int id groups 0x7f0800d8
+int id header_product_list 0x7f08021a
 int id header_title 0x7f0800d9
 int id hide_ime_id 0x7f0800da
 int id hideable 0x7f0800db
@@ -3556,7 +3558,7 @@ int id radio_group 0x7f080217
 int id radio_present 0x7f08017c
 int id ratio 0x7f08017d
 int id rectangles 0x7f08017e
-int id recycler_guests 0x7f08017f
+int id recycler_products 0x7f08021f
 int id report_drawn 0x7f080180
 int id reverseSawtooth 0x7f080181
 int id right 0x7f080182
@@ -3823,8 +3825,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
-int layout activity_guest_form 0x7f0b001c
 int layout activity_main 0x7f0b001d
+int layout activity_product_form 0x7f0b0076
 int layout app_bar_main 0x7f0b001e
 int layout content_main 0x7f0b001f
 int layout custom_dialog 0x7f0b0020
@@ -3844,8 +3846,9 @@ int layout design_navigation_menu_item 0x7f0b002d
 int layout design_text_input_end_icon 0x7f0b002e
 int layout design_text_input_start_icon 0x7f0b002f
 int layout fragment_absent 0x7f0b0030
-int layout fragment_all_guests 0x7f0b0031
+int layout fragment_all_products 0x7f0b0077
 int layout fragment_present 0x7f0b0032
+int layout header_product_list 0x7f0b0074
 int layout ime_base_split_test_activity 0x7f0b0033
 int layout ime_secondary_split_test_activity 0x7f0b0034
 int layout m3_alert_dialog 0x7f0b0035

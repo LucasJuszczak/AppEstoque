@@ -26,9 +26,9 @@ class AbsentFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
         _binding = FragmentAbsentBinding.inflate(inflater, container, false)
 
-        binding.recyclerGuests.layoutManager = LinearLayoutManager(context)
+        binding.recyclerProducts.layoutManager = LinearLayoutManager(context)
 
-        binding.recyclerGuests.adapter = adapter
+        binding.recyclerProducts.adapter = adapter
 
         val listener = object : OnProductListener {
             override fun onClick(id: Int) {

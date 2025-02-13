@@ -13,7 +13,7 @@ class ProductFormViewModel(application: Application) : AndroidViewModel(applicat
     private val repository = ProductRepository.getInstance(application)
 
     private val productModel = MutableLiveData<ProductModel>()
-    val guest: LiveData<ProductModel> = productModel
+    val product: LiveData<ProductModel> = productModel
 
     private val _saveProduct = MutableLiveData<SuccessFailure>()
     val saveProduct: LiveData<SuccessFailure> = _saveProduct

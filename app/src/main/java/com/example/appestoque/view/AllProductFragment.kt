@@ -9,14 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appestoque.constants.DataBaseConstants
-import com.example.appestoque.databinding.FragmentAllGuestsBinding
+import com.example.appestoque.databinding.FragmentAllProductsBinding
 import com.example.appestoque.view.adapter.ProductsAdapter
 import com.example.appestoque.view.listener.OnProductListener
 import com.example.appestoque.viewmodel.ProductsViewModel
 
 class AllProductFragment : Fragment() {
 
-    private var _binding: FragmentAllGuestsBinding? = null
+    private var _binding: FragmentAllProductsBinding? = null
     private val binding get() = _binding!!
     private lateinit var viewModel: ProductsViewModel
     private val adapter = ProductsAdapter()
@@ -27,11 +27,11 @@ class AllProductFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         viewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
-        _binding = FragmentAllGuestsBinding.inflate(inflater, container, false)
+        _binding = FragmentAllProductsBinding.inflate(inflater, container, false)
 
-        binding.recyclerGuests.layoutManager = LinearLayoutManager(context)
+        binding.recyclerProducts.layoutManager = LinearLayoutManager(context)
 
-        binding.recyclerGuests.adapter = adapter
+        binding.recyclerProducts.adapter = adapter
 
         val listener = object : OnProductListener {
             override fun onClick(id: Int) {

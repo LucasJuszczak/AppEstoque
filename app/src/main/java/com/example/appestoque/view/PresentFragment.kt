@@ -17,9 +17,6 @@ import com.example.appestoque.viewmodel.ProductsViewModel
 class PresentFragment : Fragment() {
 
     private var _binding: FragmentPresentBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     private lateinit var viewModel: ProductsViewModel
@@ -30,9 +27,9 @@ class PresentFragment : Fragment() {
 
         _binding = FragmentPresentBinding.inflate(inflater, container, false)
 
-        binding.recyclerGuests.layoutManager = LinearLayoutManager(context)
+        binding.recyclerProducts.layoutManager = LinearLayoutManager(context)
 
-        binding.recyclerGuests.adapter = adapter
+        binding.recyclerProducts.adapter = adapter
 
         val listener = object : OnProductListener {
             override fun onClick(id: Int) {
@@ -50,7 +47,6 @@ class PresentFragment : Fragment() {
         }
 
         adapter.attachListener(listener)
-        //viewModel.getAll()
         observe()
         return binding.root
     }

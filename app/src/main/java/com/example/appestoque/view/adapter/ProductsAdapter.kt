@@ -7,18 +7,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.appestoque.databinding.RowGuestBinding
 import com.example.appestoque.model.ProductModel
 import com.example.appestoque.view.listener.OnProductListener
-import com.example.appestoque.view.viewholder.GuestViewHolder
+import com.example.appestoque.view.viewholder.ProductViewHolder
 
-class ProductsAdapter: RecyclerView.Adapter<GuestViewHolder>() {
+class ProductsAdapter: RecyclerView.Adapter<ProductViewHolder>() {
     private var productList: List<ProductModel> = listOf()
     private lateinit var listener : OnProductListener
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuestViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val item = RowGuestBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return GuestViewHolder(item, listener)
+        return ProductViewHolder(item, listener)
     }
 
-    override fun onBindViewHolder(holder: GuestViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         holder.bind(productList[position])
     }
 
@@ -33,7 +33,7 @@ class ProductsAdapter: RecyclerView.Adapter<GuestViewHolder>() {
         notifyDataSetChanged()
     }
 
-    fun attachListener(guestListener: OnProductListener){
-        listener = guestListener
+    fun attachListener(productListener: OnProductListener){
+        listener = productListener
     }
 }

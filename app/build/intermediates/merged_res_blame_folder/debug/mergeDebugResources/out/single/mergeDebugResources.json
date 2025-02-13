@@ -16,16 +16,12 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.appestoque.app-debug-49:/navigation_mobile_navigation.xml.flat",
-        "source": "com.example.appestoque.app-main-51:/navigation/mobile_navigation.xml"
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_header_product_list.xml.flat",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\header_product_list.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_ic_menu_gallery.xml.flat",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\ic_menu_gallery.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -36,16 +32,8 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_absent.xml"
     },
     {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_ic_menu_slideshow.xml.flat",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\ic_menu_slideshow.xml"
-    },
-    {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\navigation_mobile_navigation.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\navigation\\mobile_navigation.xml"
-    },
-    {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_fragment_all_guests.xml.flat",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_all_guests.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -60,10 +48,6 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.appestoque.app-debug-49:/layout_fragment_all_guests.xml.flat",
-        "source": "com.example.appestoque.app-main-51:/layout/fragment_all_guests.xml"
-    },
-    {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_content_main.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\content_main.xml"
     },
@@ -72,8 +56,8 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\row_guest.xml"
     },
     {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_ic_menu_camera.xml.flat",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\ic_menu_camera.xml"
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_row_product.xml.flat",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\row_product.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_baseline_add_24.xml.flat",
@@ -86,6 +70,10 @@
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_side_nav_bar.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "com.example.appestoque.app-debug-49:/layout_row_guest.xml.flat",
+        "source": "com.example.appestoque.app-main-51:/layout/row_guest.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -104,20 +92,16 @@
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_item_product.xml.flat",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\item_product.xml"
+    },
+    {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.appestoque.app-debug-49:/layout_activity_guest_form.xml.flat",
-        "source": "com.example.appestoque.app-main-51:/layout/activity_guest_form.xml"
-    },
-    {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_activity_guest_form.xml.flat",
-        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\activity_guest_form.xml"
     },
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -150,5 +134,13 @@
     {
         "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_fragment_all_products.xml.flat",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\fragment_all_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-debug-49:\\layout_activity_product_form.xml.flat",
+        "source": "C:\\Users\\Estudante\\.gradle\\daemon\\8.7\\com.example.appestoque.app-main-51:\\layout\\activity_product_form.xml"
     }
 ]

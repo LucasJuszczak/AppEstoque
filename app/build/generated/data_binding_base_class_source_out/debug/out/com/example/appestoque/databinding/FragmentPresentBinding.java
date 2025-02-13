@@ -20,12 +20,16 @@ public final class FragmentPresentBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerGuests;
+  public final HeaderProductListBinding headerProductList;
+
+  @NonNull
+  public final RecyclerView recyclerProducts;
 
   private FragmentPresentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerGuests) {
+      @NonNull HeaderProductListBinding headerProductList, @NonNull RecyclerView recyclerProducts) {
     this.rootView = rootView;
-    this.recyclerGuests = recyclerGuests;
+    this.headerProductList = headerProductList;
+    this.recyclerProducts = recyclerProducts;
   }
 
   @Override
@@ -55,13 +59,21 @@ public final class FragmentPresentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recycler_guests;
-      RecyclerView recyclerGuests = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerGuests == null) {
+      id = R.id.header_product_list;
+      View headerProductList = ViewBindings.findChildViewById(rootView, id);
+      if (headerProductList == null) {
+        break missingId;
+      }
+      HeaderProductListBinding binding_headerProductList = HeaderProductListBinding.bind(headerProductList);
+
+      id = R.id.recycler_products;
+      RecyclerView recyclerProducts = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerProducts == null) {
         break missingId;
       }
 
-      return new FragmentPresentBinding((ConstraintLayout) rootView, recyclerGuests);
+      return new FragmentPresentBinding((ConstraintLayout) rootView, binding_headerProductList,
+          recyclerProducts);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
