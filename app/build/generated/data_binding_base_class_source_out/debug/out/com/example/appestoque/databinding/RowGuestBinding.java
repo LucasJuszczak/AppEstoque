@@ -4,10 +4,10 @@ package com.example.appestoque.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.appestoque.R;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class RowGuestBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final TextView textName;
@@ -28,7 +28,7 @@ public final class RowGuestBinding implements ViewBinding {
   @NonNull
   public final TextView textValue;
 
-  private RowGuestBinding(@NonNull LinearLayout rootView, @NonNull TextView textName,
+  private RowGuestBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textName,
       @NonNull TextView textQuantity, @NonNull TextView textValue) {
     this.rootView = rootView;
     this.textName = textName;
@@ -38,7 +38,7 @@ public final class RowGuestBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -81,7 +81,7 @@ public final class RowGuestBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowGuestBinding((LinearLayout) rootView, textName, textQuantity, textValue);
+      return new RowGuestBinding((ConstraintLayout) rootView, textName, textQuantity, textValue);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
