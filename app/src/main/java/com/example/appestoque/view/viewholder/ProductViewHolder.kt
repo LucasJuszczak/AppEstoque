@@ -7,13 +7,13 @@ import com.example.appestoque.model.ProductModel
 import com.example.appestoque.view.listener.OnProductListener
 
 class ProductViewHolder(private val bind: RowGuestBinding, private val listener: OnProductListener) : RecyclerView.ViewHolder(bind.root) {
-    fun bind(guest: ProductModel) {
-        bind.textName.text = guest.name
-        bind.textQuantity.text = guest.quantity
-        bind.textValue.text = guest.value
+    fun bind(product: ProductModel) {
+        bind.textName.text = product.name
+        bind.textQuantity.text = product.quantity
+        bind.textValue.text = product.value
 
         bind.textName.setOnClickListener{
-            listener.onClick(guest.id)
+            listener.onClick(product.id)
         }
 
         bind.textName.setOnLongClickListener {
@@ -22,7 +22,7 @@ class ProductViewHolder(private val bind: RowGuestBinding, private val listener:
                 .setMessage("Deseja remover o produto?")
                 .setPositiveButton("Sim"
                 ) { dialog, which ->
-                    listener.onDelete(guest.id)
+                    listener.onDelete(product.id)
                 }
                 .setNegativeButton("Não", null)
                 .create()

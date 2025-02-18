@@ -59,13 +59,13 @@ class ProductFormActivity : AppCompatActivity(), View.OnClickListener {
     private fun observe(){
         viewModel.product.observe(this, Observer {
             binding.editTextName.setText(it.name)
-            binding.editTextQuantity.setText(it.quantity)
-            binding.editTextValue.setText(it.value)
             if(it.presence){
                 binding.radioPresent.isChecked = true
             }else{
                 binding.radioAbsent.isChecked = true
             }
+            binding.editTextQuantity.setText(it.quantity)
+            binding.editTextValue.setText(it.value)
         })
 
         viewModel.saveProduct.observe(this, Observer {
