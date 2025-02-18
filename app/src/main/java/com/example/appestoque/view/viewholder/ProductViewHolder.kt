@@ -9,6 +9,8 @@ import com.example.appestoque.view.listener.OnProductListener
 class ProductViewHolder(private val bind: RowGuestBinding, private val listener: OnProductListener) : RecyclerView.ViewHolder(bind.root) {
     fun bind(guest: ProductModel) {
         bind.textName.text = guest.name
+        bind.textQuantity.text = guest.quantity
+        bind.textValue.text = guest.value
 
         bind.textName.setOnClickListener{
             listener.onClick(guest.id)
